@@ -1,6 +1,6 @@
 
 
-##Como trabalhamos
+# Como trabalhamos
 
 Usamos uma **metodologia híbrida**: o lado preditivo cuida de escopo, marcos, riscos e cronograma, e o lado ágil constrói o produto em sprints de 2 semanas. Toda a gestão acontece no **GitHub Projects**, com uma visão do quadro para cada área.
 
