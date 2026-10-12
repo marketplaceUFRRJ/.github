@@ -1,6 +1,6 @@
 name: Tarefa
 description: Registrar uma tarefa de trabalho para uma das áreas
-title: "[Área] "
+title: "[Área]"
 projects: ["marketplaceUFRRJ/3"]
 labels: []
 body:
