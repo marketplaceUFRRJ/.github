@@ -1,7 +1,8 @@
 name: Documento
 description: Solicitar a criação ou atualização de um documento
-title: "[Docs] "
+title: "[Docs]"
 labels: ["documentacao"]
+projects: ["marketplaceUFRRJ/3"]
 body:
   - type: dropdown
     id: tipo
