@@ -1,6 +1,7 @@
 name: Bug
 description: Registrar um erro encontrado no produto
-title: "[Bug] "
+title: "[Bug]"
+projects: ["marketplaceUFRRJ/3"]
 labels: ["bug"]
 body:
   - type: dropdown
