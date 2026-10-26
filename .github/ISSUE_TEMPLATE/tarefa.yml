@@ -1,0 +1,52 @@
+name: Tarefa
+description: Registrar uma tarefa de trabalho para uma das áreas
+title: "[Área]"
+projects: ["marketplaceUFRRJ/3"]
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Escreva o título no formato **[Área] Verbo no infinitivo + objeto**.
+        Exemplo: `[Backend] Criar endpoint de cadastro de usuário`.
+  - type: dropdown
+    id: area
+    attributes:
+      label: Área responsável
+      options:
+        - PMO
+        - Design
+        - Frontend
+        - Backend
+        - QA e Docs
+        - Comercial
+    validations:
+      required: true
+  - type: textarea
+    id: descricao
+    attributes:
+      label: Descrição
+      description: O que precisa ser feito e por quê.
+    validations:
+      required: true
+  - type: textarea
+    id: criterio
+    attributes:
+      label: Critério de aceite
+      description: Como saberemos que a tarefa está pronta? Liste os itens verificáveis.
+      placeholder: |
+        - [ ] O usuário consegue ...
+        - [ ] O teste ... passa
+    validations:
+      required: true
+  - type: input
+    id: epico
+    attributes:
+      label: Épico ou história relacionada
+      description: Número da issue do épico, se houver.
+      placeholder: "#12"
+  - type: textarea
+    id: dependencias
+    attributes:
+      label: Dependências
+      description: Outras tarefas ou áreas que precisam terminar antes (use #número).

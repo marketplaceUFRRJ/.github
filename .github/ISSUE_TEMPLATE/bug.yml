@@ -1,0 +1,68 @@
+name: Bug
+description: Registrar um erro encontrado no produto
+title: "[Bug]"
+projects: ["marketplaceUFRRJ/3"]
+labels: ["bug"]
+body:
+  - type: dropdown
+    id: area
+    attributes:
+      label: Onde o erro aparece
+      options:
+        - Frontend
+        - Backend
+        - Design
+        - Documentação
+        - Não sei
+    validations:
+      required: true
+  - type: textarea
+    id: passos
+    attributes:
+      label: Passos para reproduzir
+      placeholder: |
+        1. Abrir a tela ...
+        2. Clicar em ...
+        3. Ver o erro
+    validations:
+      required: true
+  - type: textarea
+    id: esperado
+    attributes:
+      label: Comportamento esperado
+    validations:
+      required: true
+  - type: textarea
+    id: atual
+    attributes:
+      label: Comportamento atual
+    validations:
+      required: true
+  - type: dropdown
+    id: severidade
+    attributes:
+      label: Severidade
+      options:
+        - Baixa (incômodo, não atrapalha o uso)
+        - Média (atrapalha, mas há como contornar)
+        - Alta (impede o uso de uma funcionalidade)
+        - Crítica (derruba o sistema ou perde dados)
+    validations:
+      required: true
+  - type: input
+    id: ambiente
+    attributes:
+      label: Ambiente
+      description: Navegador, sistema operacional, versão ou branch.
+      placeholder: Chrome 130, Windows 11, branch main
+  - type: textarea
+    id: evidencias
+    attributes:
+      label: Evidências
+      description: Prints, vídeos, mensagens de erro ou logs. Dá para arrastar arquivos para cá.
+  - type: input
+    id: relacionada
+    attributes:
+      label: Issue relacionada
+      description: Tarefa ou história em que o erro foi encontrado.
+      placeholder: "#123"

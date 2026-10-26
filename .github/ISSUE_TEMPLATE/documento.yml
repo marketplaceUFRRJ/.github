@@ -1,0 +1,52 @@
+name: Documento
+description: Solicitar a criação ou atualização de um documento
+title: "[Docs]"
+labels: ["documentacao"]
+projects: ["marketplaceUFRRJ/3"]
+body:
+  - type: dropdown
+    id: tipo
+    attributes:
+      label: Tipo de documento
+      options:
+        - Requisitos
+        - Documentação técnica
+        - Manual do usuário
+        - Ata de reunião
+        - Plano de divulgação
+        - Relatório da entrega
+        - Outro
+    validations:
+      required: true
+  - type: textarea
+    id: objetivo
+    attributes:
+      label: Objetivo
+      description: Para que o documento serve e o que ele precisa conter.
+    validations:
+      required: true
+  - type: input
+    id: publico
+    attributes:
+      label: Público-alvo
+      description: Quem vai ler (equipe, professor, usuários, stakeholders).
+  - type: input
+    id: local
+    attributes:
+      label: Onde o documento fica
+      description: Link ou caminho no repositório. Deixe em branco se ainda não existir.
+  - type: input
+    id: prazo
+    attributes:
+      label: Prazo
+      placeholder: "25/10/2026 ou Sprint 03"
+  - type: textarea
+    id: criterio
+    attributes:
+      label: Critério de aceite
+      description: O que precisa estar pronto para o documento ser aprovado.
+      placeholder: |
+        - [ ] Contém ...
+        - [ ] Revisado por ...
+    validations:
+      required: true
