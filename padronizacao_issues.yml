@@ -1,0 +1,45 @@
+name: Tarefa
+description: Registrar uma tarefa
+projects: ["marketplaceUFRRJ/3"]
+title: "[AREA] "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Titulo no formato **[AREA] Verbo no infinitivo + objeto**.
+        Ex.: `[BACKEND] Criar endpoint de cadastro de usuario`
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      description: Use a mesma area no prefixo do titulo.
+      options: [BACKEND, FRONTEND, DESIGN, DOCS, COMERCIAL, GESTAO]
+    validations:
+      required: true
+  - type: textarea
+    id: descricao
+    attributes:
+      label: Descricao
+      description: O que precisa ser feito e por que.
+    validations:
+      required: true
+  - type: textarea
+    id: criterios
+    attributes:
+      label: Criterios de aceite
+      value: |
+        - [ ] 
+    validations:
+      required: true
+  - type: input
+    id: epico
+    attributes:
+      label: Epico relacionado
+      description: Os epicos ficam no repositorio gestao-projeto.
+      placeholder: "Ex.: EP-01 Autenticacao (marketplaceUFRRJ/gestao-projeto#10)"
+  - type: textarea
+    id: dependencias
+    attributes:
+      label: Dependencias
+      description: Outras issues das quais esta tarefa depende (ex.: #12 ou marketplaceUFRRJ/app-backend#8).
