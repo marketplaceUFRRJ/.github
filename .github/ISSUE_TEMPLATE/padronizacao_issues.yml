@@ -1,4 +1,4 @@
-name: Tarefa
+name: Tarefas
 description: Registrar uma tarefa
 projects: ["marketplaceUFRRJ/3"]
 title: "[AREA] "
@@ -42,4 +42,4 @@ body:
     id: dependencias
     attributes:
       label: Dependencias
-      description: Outras issues das quais esta tarefa depende (ex.: #12 ou marketplaceUFRRJ/app-backend#8).
+      description: Outras issues das quais esta tarefa depende
