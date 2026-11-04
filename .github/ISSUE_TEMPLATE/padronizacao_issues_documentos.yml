@@ -1,0 +1,40 @@
+name: Documento
+description: Registrar a producao ou revisao de um documento
+projects: ["marketplaceUFRRJ/3"]
+title: "[DOCS] "
+labels: ["documentação"]
+body:
+  - type: dropdown
+    id: tipo
+    attributes:
+      label: Tipo de documento
+      options:
+        - Requisitos
+        - Arquitetura
+        - Documentacao da API
+        - Guia tecnico
+        - Documentacao de usuario
+        - Guia de estilo
+        - Plano de divulgacao
+        - Outro
+    validations:
+      required: true
+  - type: textarea
+    id: descricao
+    attributes:
+      label: Descricao
+      description: Qual documento deve ser produzido ou revisado e qual o objetivo.
+    validations:
+      required: true
+  - type: textarea
+    id: criterios
+    attributes:
+      label: Criterios de aceite
+      value: |
+        - [ ] 
+    validations:
+      required: true
+  - type: input
+    id: link
+    attributes:
+      label: Link do documento (se ja existir)

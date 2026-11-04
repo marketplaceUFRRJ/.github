@@ -1,0 +1,50 @@
+name: Bug
+description: Reportar um erro ou comportamento inesperado
+projects: ["marketplaceUFRRJ/3"]
+title: "[AREA] Corrigir "
+labels: ["bug"]
+body:
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options: [BACKEND, FRONTEND, DESIGN, DOCS]
+    validations:
+      required: true
+  - type: textarea
+    id: descricao
+    attributes:
+      label: Descricao do bug
+    validations:
+      required: true
+  - type: textarea
+    id: passos
+    attributes:
+      label: Passos para reproduzir
+      value: |
+        1. 
+        2. 
+        3. 
+    validations:
+      required: true
+  - type: textarea
+    id: esperado
+    attributes:
+      label: Comportamento esperado
+    validations:
+      required: true
+  - type: textarea
+    id: atual
+    attributes:
+      label: Comportamento atual
+    validations:
+      required: true
+  - type: input
+    id: ambiente
+    attributes:
+      label: Ambiente
+      placeholder: "Ex.: Chrome 130 / Windows 11 / branch develop"
+  - type: textarea
+    id: evidencias
+    attributes:
+      label: Evidencias (prints, logs)
